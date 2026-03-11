@@ -1,8 +1,8 @@
-# 💼 CareerSense: Context-Aware AI for Personalized Job & Skill Recommendations
+# 💼 CareerSense: AI powered job and skill recommendation system
 
 ## 📖 Overview
-CareerSense is an **AI-powered career recommendation system** that matches users to the most relevant jobs based on their skills, resume content, and interests.  
-It uses **Natural Language Processing (NLP)** and **Machine Learning** to analyze user profiles and job data, providing personalized job matches and career insights.
+CareerSense is an **AI-powered career recommendation system** that matches users to the most relevant jobs based on their skills, resume content.  
+It uses **Natural Language Processing (NLP)** and **Machine Learning** to analyze user profiles and job data, providing personalized job matches.
 
 ---
 
@@ -44,3 +44,4 @@ job_id,job_title,skills,description
 2,Web Developer,"HTML, CSS, JavaScript, React","Design and build modern web apps"
 3,AI Engineer,"Deep Learning, TensorFlow, NLP, Python","Develop and deploy AI solutions"
 4,Data Analyst,"Excel, Power BI, SQL, Data Visualization","Analyze business data and create dashboards"
+
