@@ -29,7 +29,7 @@ if st.button("Find Matching Jobs"):
     else:
         # Extract keywords using spaCy
         doc = nlp(user_input)
-        user_skills = [token.text.lower() for token in doc if token.pos_ in ["NOUN", "PROPN"]]
+        user_skills = [token.lemma_.lower() for token in doc if token.pos_ in ["NOUN", "PROPN"]]
         user_skills_text = " ".join(user_skills)
 
         # Combine job descriptions and skills
@@ -77,6 +77,7 @@ if not user_input.strip() == "":
     })
     fig2 = px.bar(skill_data, x="Skill", color="Skill Type", title="Matched vs Missing Skills")
     st.plotly_chart(fig2, use_container_width=True)
+
 
 
 
