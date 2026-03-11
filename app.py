@@ -16,12 +16,12 @@ def load_data():
 data = load_data()
 
 st.set_page_config(page_title="CareerSense - AI Job Recommender", layout="wide")
-st.title("💼 CareerSense: Context-Aware Job & Skill Recommendation System")
+st.title(" CareerSense: Ai powered Job & Skill Recommendation System")
 
 st.write("Upload your resume or enter your skills to get AI-powered job recommendations!")
 
 # User input
-user_input = st.text_area("✍️ Paste your resume text or list your skills:")
+user_input = st.text_area(" Paste your resume text or list your skills:")
 
 if st.button("Find Matching Jobs"):
     if user_input.strip() == "":
@@ -49,8 +49,8 @@ if st.button("Find Matching Jobs"):
         st.subheader("🎯 Top Job Recommendations:")
         for i, row in top_matches.iterrows():
             st.markdown(f"**{row['job_title']}**")
-            st.write(f"🧩 Skills: {row['skills']}")
-            st.write(f"📄 Description: {row['description']}")
+            st.write(f" Skills: {row['skills']}")
+            st.write(f" Description: {row['description']}")
             st.progress(row["match_score"])
             st.write("---")
 
@@ -77,6 +77,7 @@ if not user_input.strip() == "":
     })
     fig2 = px.bar(skill_data, x="Skill", color="Skill Type", title="Matched vs Missing Skills")
     st.plotly_chart(fig2, use_container_width=True)
+
 
 
 
